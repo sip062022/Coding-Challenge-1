@@ -1,58 +1,57 @@
 // Task 1: Variables //
 
-let employeeName = "Lucy"; // String, showing employee name
-const employeeID = 1234; // Number, showing employee ID number
-var isActive = true; // Boolean, showing that employee is active
-console.log(employeeName, typeof employeeName);  // String, showing employee name
-console.log(employeeID, typeof employeeID);  // Number, showing employee ID number
-console.log(isActive, typeof isActive);  // Boolean, showing that employee is active
+let employeeName = "Lucy"; // Declares employee name as string
+const employeeID = 1234; // Declares employee ID as a number
+var isActive = true; // Declares that employee being active is true as a Boolean
+
+console.log("Employee Name:", employeeName, "(", typeof employeeName, ")"); // Displays "Employee Name: Lucy (String)""
+console.log("EmployeeID:", employeeID, "(", typeof employeeID, ")");  // Displays "Employee ID: 1234 (Number)"
+console.log("Is Active?", isActive, "(", typeof isActive, ")");  // Displays "Is Active? True (Boolean)"
 
 // Task 2: Primitive Data Types //
 
-let productName = "Coffee" // String, showing name of product is coffee
-const productPrice = 4 // Number, showing price of coffee is $4
-var isAvailable = true; // Boolean, showing that coffee is available
-console.log(productName, typeof productName); //String, showing name of product is coffee
-console.log(productPrice, typeof productPrice); //Number, showing price of coffee is $4
-console.log(isAvailable, typeof isAvailable); //Boolean, showing that coffee is available
+let productName = "Coffee" // Declares product name as a string
+const productPrice = 4 // Declares product price as a number
+var isAvailable = true; // Declares product availability as true as a Boolean
+
+console.log("Product Name:", productName, "(", typeof productName, ")"); // Displays "Product Name: Coffee (String)"
+console.log("Product Price: $", productPrice, "(", typeof productPrice, ")"); // Displays "Product Price: $4 (Number)"
+console.log("Product Available?", isAvailable, "(", typeof isAvailable, ")"); // Displays "Product Available? True (Boolean)"
 
 // Task 3: Number Data Type //
 
-let accountBalance = 1200; //original account balance
-let accountDeposit = 2600; //adding 2600 to account
-let totalAccountBalance1 = accountBalance + accountDeposit // adds 1200 to 2600
-console.log("Your Account Balance After Deposit (Addition):" , totalAccountBalance1); // will show total account balance after addition 
+let accountBalance = 1200; // Declares original account balance
+console.log("Your Account Balance: $", accountBalance); // Displays "Your Account Balance: $1200"
 
-let accountWithdrawl = 1000 //subtracting 1000 from account
-let totalAccountBalance2 = totalAccountBalance1 - accountWithdrawl //subtracts 1000 from prior balance of 2800
-console.log("Your Account Balance After Withdrawl (Subtraction):" , totalAccountBalance2); // will show total account balance after subtraction
 
-let accountMultiply = 1.08 //multiply account by 8% interest earnings
-let totalAccountBalance3 = totalAccountBalance2 * 1.08 //multiply 2800 by 1.08
-console.log("Your Account Balance After Interest Earnings (Multiplication):" , totalAccountBalance3); //will show total in account after interest is earned
+accountBalance +=2600; // Adding 2600 to balance
+console.log("Your Account Balance After $2600 Deposit (Addition): $" , accountBalance); // Displays total amount in account after addition: "Your Account Balance After $2600 Deposit (Addition): $3800"
 
-let accountDivide = 2 //divide account by half
-let totalAccountBalance4 = totalAccountBalance3 / 2 //divide 3024 by 2
-console.log("Your Account Balance After Losing Half Your Funds (Division):" , totalAccountBalance4); //shows results after division
+accountBalance -=1000; // Subtracting 1000 from account balance
+console.log("Your Account Balance After $1000 Withdrawl (Subtraction): $" , accountBalance); // Displays total amount in account after subtraction: "Your Account Balance After $1000 Withdrawl (Subtraction): $2800"
 
-let totalAccountBalance = accountBalance + accountDeposit - accountWithdrawl; 
+accountBalance *=1.08 // Multiplies account balance by 1.08
+console.log("Your Account Balance After 8% Interest Earnings (Multiplication): $" , accountBalance); // Displays total amount in account after multiplication: "Your Account Balance After 8% Interest Earnings (Multiplication): $3024"
+
+accountBalance /= 2 // Divides account by 2
+console.log("Your Account Balance After Losing Half Your Funds (Division): $" , accountBalance); //Displays total amount in account after division: "Your Account Balance After Losing Half Your Funds (Division): $1512"
 
 // Task 4: String Data Type //
 
-let customerName = "Mark"; //String, defines customer name as Mark
-console.log(customerName, typeof customerName); //String, defines customer name
+let customerName = "Mark"; // Declares customer name as Mark as a string
+console.log("Customer Name:", customerName); // Displays "Customer Name: Mark"
 
-let greeting = "Welcome " + customerName + ". How can we help you today?"; //concatenates strings to form welcome message
-console.log(greeting); //string, shows welcome message
+let greeting = "Welcome " + customerName + ". How can we help you today?"; // concatenates strings to form welcome message
+console.log(greeting); // string, shows welcome message "Welcome Mark. How can we help you today?"
 
 // Task 5: Boolean Data Type //
 
-let isLoggedIn = true; //Boolean, shows that customer is logged in
-let answerSecurityQuestion = true //Boolean, shows that customer has answered security question correctly
+let isLoggedIn = true; // Declares isLoggedIn variable as Boolean
+let answerSecurityQuestion = true // Declares answerSecurityQuestion variable as Boolean
 
-if (isLoggedIn && answerSecurityQuestion) { //If both conditions are true
-    console.log ("You may access your account"); //Message "you may access your account" will display
+if (isLoggedIn && answerSecurityQuestion) { // Establishes an if clause for if both conditions are true
+    console.log ("You may access your account."); // Message "you may access your account" will display
 
-} else {
-    console.log("Access denied. Invalid login credentials.");
+} else { // Establishes that if both conditions are not true
+    console.log("Access denied. Invalid login credentials."); // Meessage "Access denied. Invalid login credentials." will display instead
 }
