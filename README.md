@@ -1,1 +1,1 @@
-This is my Coding Challenge #1.
+This is my Coding Challenge #1
