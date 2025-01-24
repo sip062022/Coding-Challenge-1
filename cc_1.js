@@ -44,3 +44,15 @@ console.log(customerName, typeof customerName); //String, defines customer name
 
 let greeting = "Welcome " + customerName + ". How can we help you today?"; //concatenates strings to form welcome message
 console.log(greeting); //string, shows welcome message
+
+// Task 5: Boolean Data Type //
+
+let isLoggedIn = true; //Boolean, shows that customer is logged in
+let answerSecurityQuestion = true //Boolean, shows that customer has answered security question correctly
+
+if (isLoggedIn && answerSecurityQuestion) { //If both conditions are true
+    console.log ("You may access your account"); //Message "you may access your account" will display
+
+} else {
+    console.log("Access denied. Invalid login credentials.");
+}
