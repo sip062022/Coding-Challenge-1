@@ -36,3 +36,11 @@ let totalAccountBalance4 = totalAccountBalance3 / 2 //divide 3024 by 2
 console.log("Your Account Balance After Losing Half Your Funds (Division):" , totalAccountBalance4); //shows results after division
 
 let totalAccountBalance = accountBalance + accountDeposit - accountWithdrawl; 
+
+// Task 4: String Data Type //
+
+let customerName = "Mark"; //String, defines customer name as Mark
+console.log(customerName, typeof customerName); //String, defines customer name
+
+let greeting = "Welcome " + customerName + ". How can we help you today?"; //concatenates strings to form welcome message
+console.log(greeting); //string, shows welcome message
